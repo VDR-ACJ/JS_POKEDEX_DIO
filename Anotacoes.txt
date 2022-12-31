@@ -2,3 +2,9 @@ Instalar global "npm install -g http-server"
 http-server ./ "inicia um servidor http e da um endereço para acesso"
 https://github.com/digitalinnovationone/js-developer-pokedex
 https://dribbble.com/
+
+Normalize para padronizar os estilos padrões dos navegadores
+https://cdnjs.com/libraries/normalize
+
+font
+ https://fonts.google.com/specimen/Roboto

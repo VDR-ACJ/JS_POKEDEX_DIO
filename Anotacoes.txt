@@ -8,3 +8,6 @@ https://cdnjs.com/libraries/normalize
 
 font
  https://fonts.google.com/specimen/Roboto
+
+ Mobile First
+-Sempre fazer o estilo voltado para dispositivos Mobile e depois customizando para desktop

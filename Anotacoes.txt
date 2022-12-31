@@ -1,0 +1,4 @@
+Instalar global "npm install -g http-server"
+http-server ./ "inicia um servidor http e da um endereço para acesso"
+https://github.com/digitalinnovationone/js-developer-pokedex
+https://dribbble.com/

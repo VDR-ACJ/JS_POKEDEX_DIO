@@ -11,3 +11,10 @@ font
 
  Mobile First
 -Sempre fazer o estilo voltado para dispositivos Mobile e depois customizando para desktop
+
+Site API
+--pokeapi.co
+Lista os pokemons os primeiros 20
+--https://pokeapi.co/api/v2/pokemon
+
+--https://pokeapi.co/api/v2/pokemon?offset=0&limit=10

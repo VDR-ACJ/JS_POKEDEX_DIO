@@ -18,3 +18,12 @@ Lista os pokemons os primeiros 20
 --https://pokeapi.co/api/v2/pokemon
 
 --https://pokeapi.co/api/v2/pokemon?offset=0&limit=10
+
+---DESAFIO---
+Fazer o detalhe do pokemon em uma outra pagina (Modal)
+
+---https://pokemondb.net/pokedex/game/gold-silver-crystal
+--https://pokemondb.net/sprites
+
+Flip card example
+https://www.w3schools.com/howto/howto_css_flip_card.asp

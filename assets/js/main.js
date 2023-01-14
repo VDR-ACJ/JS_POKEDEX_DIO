@@ -32,11 +32,43 @@ function loadPokemonsItens(offset, limit ){
                             ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                         </ol>
 
-                        <img src="${pokemon.photo}" 
+                        <img src="${pokemon.photo_back}" 
                             alt="${pokemon.name}">
                     </div>
                     
             </li>`).join('')
+
+            const newHtml2 = pokemons.map((pokemon) =>
+            `<li class="pokemon ${pokemon.type}">
+            <div class="flip-card ">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front pokemon grass">
+                    
+                   
+                        <span class="number">#1</span>
+                        <span class="name">bulbasaur</span> 
+                            <div class="detail">
+                                <ol class="types">
+                                    <li class="type grass">grass</li><li class="type poison">poison</li>
+                                </ol>
+        
+                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="bulbasaur">
+                            </div>
+                            
+                    
+
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>John Doe</h1> 
+                    <p>Architect &amp; Engineer</p> 
+                    <p>We love that guy</p>
+                  </div>
+                </div>
+              </div>
+
+        </li>`).join('')
+
+        
         /*for (let i = 0; i < pokemons.length; i++) {
             const pokemon = pokemons[i];
             //console.log(convertPokemonToLi(pokemon)) 

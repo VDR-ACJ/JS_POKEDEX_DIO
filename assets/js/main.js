@@ -23,7 +23,7 @@ function loadPokemonsItens(offset, limit ){
             return convertPokemonToLi(pokemon)
         })*/
 
-        const newHtml = pokemons.map((pokemon) =>
+        const newHtml_official = pokemons.map((pokemon) =>
             `<li class="pokemon ${pokemon.type}">
                 <span class="number">#${pokemon.number}</span>
                 <span class="name">${pokemon.name}</span> 
@@ -38,34 +38,38 @@ function loadPokemonsItens(offset, limit ){
                     
             </li>`).join('')
 
-            const newHtml2 = pokemons.map((pokemon) =>
-            `<li class="pokemon ${pokemon.type}">
+            const newHtml = pokemons.map((pokemon) =>
+            `<li class="pokemon">
             <div class="flip-card ">
                 <div class="flip-card-inner">
-                  <div class="flip-card-front pokemon grass">
-                    
-                   
-                        <span class="number">#1</span>
-                        <span class="name">bulbasaur</span> 
-                            <div class="detail">
-                                <ol class="types">
-                                    <li class="type grass">grass</li><li class="type poison">poison</li>
-                                </ol>
-        
-                                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="bulbasaur">
-                            </div>
-                            
-                    
+                    <div class="flip-card-front ${pokemon.type}">
+                    <span class="img-pokebola"><img src="./assets/img/pixel-art-poke-ball.png" 
+                     alt="pokebola"></span>
+                    <span class="number">#${pokemon.number}</span>
+                <span class="name">${pokemon.name}</span> 
+                    <div class="detail">
+                        <ol class="types">
+                            ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                        </ol>
 
-                  </div>
-                  <div class="flip-card-back">
-                    <h1>John Doe</h1> 
-                    <p>Architect &amp; Engineer</p> 
-                    <p>We love that guy</p>
-                  </div>
+                        <img src="${pokemon.photo}" 
+                            alt="${pokemon.name}">
+                    </div>
+                    </div>
+                    <div class="flip-card-back ${pokemon.type}">
+                    
+                        <div class="detail">
+                            <ol class="types">
+                               <li>Weight: ${pokemon.weight} "</li>
+                               <li>height: ${pokemon.height} lb</li>
+                            </ol>
+    
+                            <img src="${pokemon.photo_back}" 
+                                alt="${pokemon.name}">
+                    
+                    </div>
                 </div>
-              </div>
-
+                </div>
         </li>`).join('')
 
         

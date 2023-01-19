@@ -13,9 +13,16 @@
     <!--CSS GLOBAL-->
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/pokedex.css">
+    <link rel="stylesheet" href="./assets/css/spinner.css">
+    <script src="./assets/js/spinner.js"></script>
+  </head>
     <title>Pokedex</title>
 </head>
 <body>
+    <!-- (A) LOADING SPINNER -->
+    <div id="SpinnerLoad">
+        <img src="./assets/img/pokeball1.gif"/>
+      </div>
     <section class="content">
         <h1><div class="img-logo"><img src="./assets/img/pokeapi_256.png" alt="" srcset=""></div></h1>
         <ol id="pokemonList" class="pokemons">
@@ -28,11 +35,14 @@
             </button>
         </div>       
     </section>
-
+    
     <!-- JS-->
     <script src="./assets/js/pokemon-model.js"></script>
     <script src="./assets/js/poke-api.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <div id="containerSpinnerLoad"></div>
+    
 </body>
 
 </html>

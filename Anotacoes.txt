@@ -32,3 +32,6 @@ https://www.w3schools.com/howto/howto_css_flip_card.asp
 colors
 
 https://www.etsy.com/au/listing/1109425754/pokemon-type-colors-procreate-megapack
+
+spinner load
+https://code-boxx.com/full-screen-css-loading-spinner/

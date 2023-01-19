@@ -82,12 +82,16 @@ function loadPokemonsItens(offset, limit ){
         pokemonList.innerHTML +=newHtml
     })
     .catch((error)=> console.error(error))
-    .finally(() =>console.log('Requisição concluída!'))
+    .finally(() =>console.log('Requisição concluída!'),
+    setTimeout(() => {  hideLoadSpinner() }, 3000)
+    
+    )
 }
 
 loadPokemonsItens(offset, limit )
 
 loadMoreButton.addEventListener('click',() =>{
+    showLoadSpinner()
     offset +=limit
     const qtdRecordNextPage = offset + limit
 

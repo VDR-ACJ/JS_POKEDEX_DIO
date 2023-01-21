@@ -97,6 +97,7 @@ li .pokemon {
     margin: 0.5rem;
     padding: 1rem;
     border-radius: 1rem;
+    align-items: center;
 }
 .pokemon .number{
     color: #000;
